@@ -1,4 +1,4 @@
-from tkinter import Tk, Label, Entry, Button, messagebox
+from tkinter import Tk, Label, Entry, Button
 
 #Profit
 def Profit():
