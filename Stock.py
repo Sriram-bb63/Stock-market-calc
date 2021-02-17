@@ -1,4 +1,4 @@
-from tkinter import Tk, Label, Entry, Button
+from tkinter import Tk, Label, Entry, Button, messagebox
 
 #Profit
 def Profit():
@@ -7,16 +7,16 @@ def Profit():
     ProfitText.grid(row=7, column=0, columnspan=3)
 
     #ProfitPerStock, ProfitTot, Profit%, ProfitRatio (Labels)
-    ProfitPerStockDisp=Label(root, text="Profit per stock:")
+    ProfitPerStockDisp=Label(root, text="Profit per stock")
     ProfitPerStockDisp.grid(row=8, column=0)
 
-    ProfitTotDisp=Label(root, text="Total profit:")
+    ProfitTotDisp=Label(root, text="Total profit")
     ProfitTotDisp.grid(row=9, column=0)
 
-    ProfitPercentDisp=Label(root, text="Profit %:")
+    ProfitPercentDisp=Label(root, text="Profit %")
     ProfitPercentDisp.grid(row=10, column=0)
 
-    ProfitRatioDisp=Label(root, text="Profit ratio:")
+    ProfitRatioDisp=Label(root, text="Profit ratio")
     ProfitRatioDisp.grid(row=11, column=0)
 
     #ProfitPerStock, ProfitTot, Profit%, ProfitRatio (Entry)
@@ -45,7 +45,7 @@ def Profit():
     ProfitPercent.delete(0, 10)
     ProfitPercent.insert(0, pp)
 
-    pr=round(pt/(float(Bp.get())*float(BpNo.get())), 2)
+    pr=round((float(TotEntry2.get())*float(TotEntry1.get())), 2)
     ProfitRatio.delete(0, 10)
     ProfitRatio.insert(0, pr)
 
@@ -56,16 +56,16 @@ def Loss():
     LossText.grid(row=7, column=0, columnspan=3)
 
     #LossPerStock, LossTot, Loss%, LossRatio (Labels)
-    LossPerStockDisp=Label(root, text="Loss per stock:")
+    LossPerStockDisp=Label(root, text="Loss per stock")
     LossPerStockDisp.grid(row=8, column=0)
 
-    LossTotDisp=Label(root, text="Total loss:")
+    LossTotDisp=Label(root, text="Total loss")
     LossTotDisp.grid(row=9, column=0)
 
-    LossPercentDisp=Label(root, text="Loss %:")
+    LossPercentDisp=Label(root, text="Loss %")
     LossPercentDisp.grid(row=10, column=0)
 
-    LossRatioDisp=Label(root, text="Loss ratio:")
+    LossRatioDisp=Label(root, text="Loss ratio")
     LossRatioDisp.grid(row=11, column=0)
 
     #LossPerStock, LossTot, Loss%, LossRatio (Entry)
@@ -94,7 +94,7 @@ def Loss():
     LossPercent.delete(0, 10)
     LossPercent.insert(0, lp)
 
-    lr=round((float(Bp.get())*float(BpNo.get()))/lt, 2)
+    lr=round((float(TotEntry2.get())*float(TotEntry1.get())), 2)
     LossRatio.delete(0, 10)
     LossRatio.insert(0, lr)
 
@@ -107,7 +107,7 @@ def Be():
 #Go button func
 def go1():
     #TotBP(Label)
-    TotDisp1=Label(root, text="Total BP=")
+    TotDisp1=Label(root, text="Total BP")
     TotDisp1.grid(row=3, column=0)
 
     #Tot BP(Entry and insert)
