@@ -1,1 +1,7 @@
-This is a GUI based stock market calc which can be used to get info about a trade you have made/about to make
+Made with python using tkinter module
+
+![screenshot1](Screenshots/Screenshot (57).png)
+
+![screenshot1](Screenshots/Screenshot (58).png)
+
+![screenshot1](Screenshots/Screenshot (59).png)
