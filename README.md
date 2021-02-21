@@ -1,7 +1,3 @@
-Made with python using tkinter module
+Made with python using tkinter module.  Used to calculate outcome of a trade.
 
-![screenshot1](Screenshots/Screenshot (57).png)
-
-![screenshot1](Screenshots/Screenshot (58).png)
-
-![screenshot1](Screenshots/Screenshot (59).png)
+Note-Does not include taxation and trading charges
